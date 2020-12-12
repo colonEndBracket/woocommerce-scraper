@@ -17,14 +17,10 @@ if __name__ == '__main__':
     catalog = []
     page_number = 1
     page_limit = 2
-    if len(sys.argv) == 1:
-        #domain = ""
-        pass
-    elif len(sys.argv) == 2:
+    if len(sys.argv) == 2:
         domain = sys.argv[1]
     else:
-        print("Invalid arguments!")
-        print("Run 'python3 main.py [example.com]' or 'python3 main.py' with the domain variable set")
+        print("Usage: 'python3 main.py [example.com]'")
         exit()
     # Iterate through each page of the shop
     while page_number <= page_limit:
